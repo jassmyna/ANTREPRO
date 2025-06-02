@@ -1,0 +1,235 @@
+body {
+    background-color: #e2e2e2;
+    font-family: "Hind", "Montserrat", sans-serif;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    padding-right: 0px;
+}
+
+nav ul.show {
+    padding-right: 0px;
+}
+
+/*page content*/
+.page-content{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-29px);
+    font-family: "Hind", sans-serif;
+}
+
+.page-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.page-title h2{
+    font-size: 20px;
+}
+
+.page-title h3{
+    font-size: 18px;
+}
+
+.p1{
+    margin-top: 10px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+h4, h3{
+    color: #ff7300;
+    font-family: "Montserrat", sans-serif;
+}
+
+#f3{
+    padding-top: 25px;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(10px);
+    margin-left: 15px;
+}
+
+.intro-text, .sfaturi p{
+    font-size: 14px;
+    max-width: 180px;
+}
+
+.sfaturi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 18px;
+}
+
+.sfaturi p{
+    max-width: 300px;
+}
+
+
+
+
+#f1, #b3{
+    background: linear-gradient(to left, #ff5100, #f98526);
+}
+
+#f1 h1{
+    max-width: 290px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    transform: translateX(-15px);
+    transform: translateY(-3px);
+}
+
+#logo {
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
+/* Book */
+.book-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    padding-top: 190px;
+    top: 0;
+}
+
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #e2e2e2;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #e06805;
+}
+
+i {
+    font-size: 50px;
+    color: #ff7300;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+
+.footer {
+    font-family: "Hind", sans-serif;
+    background-color: #ff7300;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}

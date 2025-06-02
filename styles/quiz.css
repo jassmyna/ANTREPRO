@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind", "Montserrat", sans-serif;
+}
+
+.bg{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg img{
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quiz-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #ff7300;*/
+}
+
+.quiz-box{
+    width: 750px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.18); /* Light transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.question-count{
+    text-align: center;
+    margin-top: 20px;
+}
+.question-count .count{
+    font-size: 25px;
+    font-weight: 800;
+    color: #ff7300;
+}
+
+.question-count .count span{
+    /*number of question count*/
+    color: #ff5100;
+    font-size: 35px;
+}
+.question-count .question-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff8c2e;
+}
+button{
+    border: 2px solid #ff7300;
+}
+
+.question-box{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.question-box #question-number{
+    /*number of the question text*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5100;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.question-box #question{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    color: #838383;
+    padding: 10px 15px;
+    border-radius: 10px;
+    /*box-shadow: #ff730073 0px 4px 12px;*/
+}
+
+.answers-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    gap: 35px 15px;
+}
+
+.answer-lable,
+.button-box button {
+    font-size: 16px;
+}
+
+.answers-box .box{
+    width: calc(50% - 10px);
+    position: relative;
+}
+.answers-box .box .answer-number{
+    /*a,b,c,d*/
+    position: absolute;
+    top: -20px;
+    right: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: #a93800;
+    width: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.answers-box .box .answer-lable{
+    /*button background*/
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, #ff5100, #f98526);
+    border: 2px solid #ff7300;
+    width: 100%;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.answers-box .box input:checked~.answer-lable {
+    background: linear-gradient(to left, #797979, #777777);
+    color: white;
+    border: 2px solid #c6c6c6;
+}
+
+.button-box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.button-box button{
+    /*next question button*/
+    width: calc(70% - 15px);
+    background-color: #ff5100;
+    padding: 12px 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-box button:hover{
+    border: 2px solid #ff7300;
+    background-color: white;
+    color: #ff7300;
+}
+
+.button-box .submit-btn{
+    display: none;
+}
+
+.result-show{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    background-color: #ff7300;
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+
+.back a{
+    color: #a93800;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.back a:hover{
+    color: white;
+}

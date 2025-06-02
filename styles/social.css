@@ -1,0 +1,94 @@
+body{
+    background-color: #e2e2e2;
+    font-family: "Hind", "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 82px;
+}
+
+nav ul {
+    padding-right: 0px;
+}
+
+nav ul.show {
+    padding-right: 0px;
+}
+
+.s2{
+    margin-bottom: 70px;
+}
+
+.s1{
+    transform: translateY(-20px);
+    display: grid;
+    height: 260px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background: linear-gradient(to right, #ff4400, #f98526);
+    color: white;
+    padding-bottom: 60px;
+    margin-bottom: -30px;
+    margin-top: -43px;
+}
+
+.abtext{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    padding-top: 27px;
+    font-family: "Hind", sans-serif;
+}
+
+.abtext h3, .abtext p{
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.abtext h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.abtext p{
+    font-size: 17px;
+}
+
+.abimage{
+    display: flex;
+    justify-content: center;
+}
+
+.abimage img{
+    width: 500px;
+    height: 260px;
+    object-fit: cover;
+    transform: translateX(110px);
+}
+
+/* Sections */
+.row h5{
+    color: #ff7300;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.row p{
+    font-family: "Hind", sans-serif;
+}
+
+.footer {
+    background-color: #ff7300;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

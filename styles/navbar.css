@@ -1,0 +1,189 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: "Hind", "Montserrat", sans-serif;
+  background-color: #e2e2e2;
+}
+
+/* NAVBAR */
+nav {
+    z-index: 100;
+    color: black;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    width: 100%;
+    top: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+  }
+  
+  nav a:hover{
+    color: #ff7300;
+  }
+  
+  #burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  #logo {
+    background-color:#ff7300;
+    color: transparent;
+    margin-top: -5px;
+    margin-right: -10px;
+    margin-left: 5px;
+    border-radius: 25px;
+    width: 43px;
+    height: 43px;
+    max-width: 100px;
+  }
+  
+  #sign-in-btn  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid #ff7300;
+    color: #ff7300;
+    padding: 8px 15px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: color 0.4s ease-in-out, background-color 0.3s ease-in;
+  }
+
+  #sign-in-btn a {
+    text-decoration: none;
+  }
+  
+  #sign-in-btn:hover {
+    color: white;
+    background-color: #ff7300;
+  }
+
+  #profile-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid #ff7300;
+    color: #ff7300;
+    padding: 8px 15px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: color 0.4s ease-in-out, background-color 0.3s ease-in;
+}
+
+#profile-btn:hover {
+    color: white;
+    background-color: #ff7300;
+}
+  
+  @media (max-width: 1305px){
+    nav a{
+      font-size: 11px;
+    }
+  }
+  
+  @media (max-width: 1270px){
+    nav a{
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 1117px){
+    nav a{
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 1108px) {
+    nav{
+      margin-top: -7px;
+      z-index: 100;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      width: 100%;
+      background-color: rgb(216, 216, 216);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in;
+      margin-top: 7px;
+      z-index: 100;
+      padding-right: 66px;
+    }
+  
+    nav ul.show {
+      z-index: 100;
+      margin-top: 7px;
+      max-height: 600px;
+      padding-right: 66px;
+    }
+  
+    nav a {
+      font-size: 12px;
+      margin-right: 8px;
+      color: #747474;
+    }
+  
+    nav li {
+      margin: 5px 0;
+    }
+  
+    #burger-menu {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #sign-in-btn {
+      margin-top: 8px;
+      justify-content: flex-end;
+    }
+  
+    #logo{
+      margin-top: 5px;
+    }
+  }
+
