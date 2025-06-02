@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\home.css">
+    <link rel="stylesheet" href="styles\navbar.css">
+    <title>AntrePro | Acasă</title>
+</head>
+<body>
+    <div class="start">
+        <div class="transition1">
+            <p class="name">ANTREPRO</p>
+        </div>
+    </div>
+
+    <style>
+        .proifle-btn{
+            display:none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border: 2px solid #ff7300;
+            color: #ff7300;
+            padding: 8px 15px;
+            background-color: transparent;
+            cursor: pointer;
+            font-family: Montserrat, sans-serif;
+            font-weight: 600;
+            transition: color 0.4s ease-in-out, background-color 0.3s ease-in
+        }
+        .profile-bt:hover{
+            color: white;
+            background-color: #ff7300;
+        }
+    </style>
+
+    <main class="mainpg">
+        <nav>
+            <a href="index.html"><img src="logo2.png" alt="!!!!!!!" id="logo"></a>
+            <ul>
+            <li><a href="ia.html">Ideea de afaceri</a></li>
+            <li><a href="apps.html">Instrumente şi aplicații</a></li>
+            <li><a href="surse.html">Surse de finanţare</a></li>
+            <li><a href="resurse.html">Articole şi resurse</a></li>
+            <li><a href="test.html">Testimoniale</a></li>
+            <li><a href="social.html">Antreprenoriat Social</a></li>
+            <li><a href="bibliografie.html">Bibliografie</a></li>
+            </ul>
+            <button id="profile-btn" onclick="location.href='login.html'">LOG OUT</button>
+            <div id="burger-menu">&#9776;</div>            
+        </nav>
+
+        <img class="fundal" src="photos/bg1.png"/>    
+
+        <div class="hero">
+            <div class="htext">
+                <h1>Începe aventura ta antreprenorială împreună cu <span style="color:#ff7300;">AntrePro</span></h1>
+                <h4>Bine ai venit pe <span style="color:#ff7300;">AntrePro</span>, destinația ta pentru a naviga către succesul antreprenorial. Aici, te ghidăm prin resurse și informații esențiale pentru a-ți construi și dezvolta afacerea.</h4>
+                <a href="quiz.html" target="_blank";><button class="startquiz">START QUIZ</button></a>
+            </div>
+            <div class="illustration">
+                <img class="imgui" src="photos\girl.png">
+            </div>
+        </div>
+    </main>
+
+        
+
+    <footer class="footer text-center">
+        <p>&copy; 2025 AntrePro by Ștețco Jassmyna. All rights reserved.</p>
+      </footer>
+
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+          document.querySelector('nav ul').classList.toggle('show');});
+
+        // Check if user is logged in using localStorage
+        if (localStorage.getItem('loggedIn') === 'true') {
+        document.getElementById("sign-in-btn").style.display = "none";
+        document.getElementById("profile-btn").style.display = "flex";
+
+        // Add hover effect using JavaScript
+        const profileBtn = document.getElementById("profile-btn");
+
+        profileBtn.addEventListener("mouseenter", function() {
+            profileBtn.style.color = "white";
+            profileBtn.style.backgroundColor = "#ff7300";
+        });
+
+        profileBtn.addEventListener("mouseleave", function() {
+            profileBtn.style.color = "#ff7300";
+            profileBtn.style.backgroundColor = "transparent";
+        });
+    }
+
+      </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+</body>
+</html>

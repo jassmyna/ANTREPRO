@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>AntrePro | Surse de finanţare</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html"><img src="logo2.png" alt="!!!!!!!" id="logo"></a>
+        <ul>
+        <li><a href="quiz.html" target="_blank">QUIZ</a></li>
+        <li><a href="ia.html">Ideea de afaceri</a></li>
+        <li><a href="apps.html">Instrumente şi aplicații</a></li>
+        <li><a href="surse.html">Surse de finanţare</a></li>
+        <li><a href="resurse.html">Articole şi resurse</a></li>
+        <li><a href="test.html">Testimoniale</a></li>
+        <li><a href="social.html">Antreprenoriat Social</a></li>
+        <li><a href="bibliografie.html">Bibliografie</a></li>
+        </ul>
+        <a href="login.html"><button id="sign-in-btn">LOG OUT</button></a>
+        <div id="burger-menu">&#9776;</div>            
+    </nav>
+
+        
+    <style>
+        body {
+            background-color: #e2e2e2;
+            padding-top: 84px;
+        }
+
+        nav ul {
+    padding-right: 0px;
+}
+
+nav ul.show {
+    padding-right: 0px;
+}
+
+        .footer {
+            background-color: #ff7300;
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(70px);
+            font-family: "Hind", sans-serif;
+        }
+
+        .carousel-indicators img{
+            width: 70px;
+            display: block;
+        }
+        .carousel-indicators button{
+            width: max-content!important;
+        }
+        .carousel-indicators{
+            position: unset;
+        }
+
+        .row h5{
+            color: #ff7300;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+        }
+
+        .row p{
+            font-family: "Hind", sans-serif;
+        }
+
+        .footer {
+            background-color: #ff7300;
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <div class="carousel slide" 
+    id="carouselDemo"
+    data-bs-wrap="true" 
+    data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="photos/02.png" class="w-100">
+            </div>
+
+            <div class="carousel-item " 
+            data-bs-interval="2000">
+                <img src="photos/03(3).png" class="w-100">
+            </div>
+
+            <div class="carousel-item ">
+                <img src="photos/03.png" class="w-100">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" 
+        type="button"
+        data-bs-target="#carouselDemo" 
+        data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <div class="carousel-indicators">
+        <button type="button" class="active"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="0">
+            <img src="photos/02.png" />
+        </button>
+
+        <button type="button" 
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="1">
+            <img src="photos/03(3).png" />
+        </button>
+
+        <button type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide-to="2">
+            <img src="photos/03.png" />
+        </button>
+    </div>
+</div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="photos/1.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Granturi şi programe guvernamentale</h5>
+                        <p class="card-text">Guvernul României şi organizațiile non-guvernamentale pot oferi granturi şi programe de finanțare pentru tinerii antreprenori. Aceste programe pot include subvenții pentru începerea unei afaceri, programe de mentorat şi asistență în dezvoltarea planurilor de afaceri.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="photos/2.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Fonduri europene</h5>
+                        <p class="card-text">România beneficiază de fonduri europene destinate dezvoltării economice şi antreprenoriale. Tinerii antreprenori pot accesa aceste fonduri prin intermediul programelor şi proiectelor finanțate de Uniunea Europeană, care vizează sprijinirea inovării şi creării de locuri de muncă.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="photos/3.png" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Împrumuturi şi credite bancare</h5>
+                        <p class="card-text">Tinerii antreprenori pot accesa împrumuturi şi credite bancare pentru a-şi finanța afacerile. Multe bănci din România oferă produse de creditare adaptate nevoilor antreprenorilor, inclusiv împrumuturi cu dobândă redusă sau garanții pentru start-up- uri.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="photos/4.png" class="card-img-top" alt="Image 4">
+                    <div class="card-body">
+                        <h5 class="card-title">4. Competiţii şi incubatoare de afaceri</h5>
+                        <p class="card-text">Tinerii antreprenori pot căuta investitori privați sau fonduri de capital de risc care să fie interesaţi să investească în afacerile lor. Aceste surse de finanțare pot fi mai flexibile decât împrumuturile bancare și pot oferi, de asemenea, experienţă şi resurse suplimentare în afara capitalului.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer text-center">
+        <p>&copy; 2025 AntrePro by Ștețco Jassmyna. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

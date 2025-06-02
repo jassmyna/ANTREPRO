@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <script src="https://kit.fontawesome.com/c29f1a31c4.js" crossorigin="anonymous"></script>
+    <title>AntrePro | QUIZ</title>
+</head>
+<body>
+
+    
+    
+    <div class="quiz-wrapper">
+        <div class="quiz-box" id="quiz">
+            <div class="question-count">
+                <p class="count"><span id="count-question">3</span>/<strong id="tol-num-que">10</strong></p>
+                <p class="question-title">Întrebări</p>
+            </div>
+
+
+            <div class="question-box">
+                <span id="question-number">3</span>
+                <p id="question">Lorem ipsum dolor sit amet, consecture adipiscing elit Debits?</p>
+            </div>
+
+            <div class="answers-box">
+                <div class="box">
+                    <div class="answer-number">A</div>
+                    <input type="radio" name="option" id="first" value="a" required hidden>
+                    <label for="first" class="answer-lable">Testing 1</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">B</div>
+                    <input type="radio" name="option" id="second" value="b" required hidden>
+                    <label for="second" class="answer-lable">Testing 2</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">C</div>
+                    <input type="radio" name="option" id="third" value="c" required hidden>
+                    <label for="third" class="answer-lable">Testing 3</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">D</div>
+                    <input type="radio" name="option" id="fourth" value="d" required hidden>
+                    <label for="fourth" class="answer-lable">Testing 4</label>
+                </div>
+            </div>
+
+            <div class="button-box">
+                <button type="button" class="next-btn button" id="next-question-btn">Următoarea întrebare</button>
+                <button type="button" class="next-btn button submit-btn" id="submit">Finalizează QUIZ-ul</button>
+            </div>
+        </div>
+
+        <div class="result-show" id="result">
+            <h2 id="score">Răspunsuri Corecte</h2>
+            <div class="button-box">
+                <button class="button" onclick="location.reload();">Restart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="back"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+
+    <div class="bg"><img src="photos/quizbg.png"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

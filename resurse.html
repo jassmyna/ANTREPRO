@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>AntrePro | Articole şi resurse</title>
+
+
+</head>
+<body>
+    <style>
+        body {
+            background-color: #e2e2e2;
+            padding-top: 82px;
+        }
+
+        nav ul {
+    padding-right: 0px;
+}
+
+nav ul.show {
+    padding-right: 0px;
+}
+        
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #ff7300;
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(70px);
+            font-family: "Hind", sans-serif;
+        }
+
+        h5{
+            font-weight: 600;
+        }
+
+        .card img{
+            height: 200px;
+            width: 140px;
+            margin: 0 auto;
+            display: block;
+            object-fit:contain;
+        }
+
+        .card a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-family: "Montserrat", sans-serif;
+            transition: color 0.4s;
+        }
+
+        .card a:hover{
+            color: #ff7300;
+            text-decoration: underline;
+        }
+        
+        .card {
+            font-family: "Hind", sans-serif;
+        }
+
+        #video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (height divided by width) */
+        }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html"><img src="logo2.png" alt="!!!!!!!" id="logo"></a>
+        <ul>
+        <li><a href="quiz.html" target="_blank">QUIZ</a></li>
+        <li><a href="ia.html">Ideea de afaceri</a></li>
+        <li><a href="apps.html">Instrumente şi aplicații</a></li>
+        <li><a href="surse.html">Surse de finanţare</a></li>
+        <li><a href="resurse.html">Articole şi resurse</a></li>
+        <li><a href="test.html">Testimoniale</a></li>
+        <li><a href="social.html">Antreprenoriat Social</a></li>
+        <li><a href="bibliografie.html">Bibliografie</a></li>
+        </ul>
+        <a href="login.html"><button id="sign-in-btn">LOG OUT</button></a>
+        <div id="burger-menu">&#9776;</div>            
+    </nav>
+    
+    <!-- Hero Section with Image -->
+    <div class="jumbotron jumbotron-fluid">
+        <img src="photos/banner1(2).png" class="img-fluid" alt="Hero Image" style="width: 100%;">
+    </div>
+
+    <!-- Books -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Antreprenoriatul între două coperte</h2>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photos/coperta1.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <a href="https://www.libris.ro/the-4-hour-workweek-escape-9-5-live-anywhere-BRT9780307465351--p15929577.html"><h5 class="card-title">"The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich" de Timothy Ferriss:</h5></a>
+                        <p class="card-text">În această carte, autorul împărtășește strategii și tactici pentru a evita capcanele tradiționale ale locului de muncă 9-5 și pentru a crea un stil de viață și o afacere care să ofere libertate și flexibilitate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photos/coperta2.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <a href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"><h5 class="card-title">"Zero to One: Notes on Startups, or How to Build the Future" de Peter Thiel și Blake Masters: </h5></a>
+                        <p class="card-text">În această carte, cofondatorul PayPal, Peter Thiel, oferă perspective provocatoare despre construirea de afaceri și inovarea radicală. Cartea explorează ideea de a crea ceva nou și unic (de la zero la unu) și oferă sfaturi și provocări pentru tinerii antreprenori.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="photos/coperta3.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <a href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898"><h5 class="card-title">"The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses" de Eric Ries: </h5></a>
+                        <p class="card-text">Această carte oferă o abordare practică și orientată spre acțiune a antreprenoriatului, concentrându-se pe metodele și principiile de inovare și testare rapidă a ideilor pentru a crea afaceri de succes în condiții de incertitudine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <!-- Video Section -->
+        <section class="container mt-5">
+            <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div id="video-container">
+                <!-- Replace 'your-video.mp4' with your actual video file -->
+                <video id="video" controls>
+                    <source src="Calitatile necesare pentru un antreprenor de succes - cu Marius Ghenea.mp4" type="video/mp4">
+                    <track kind="subtitles" src="path/to/your/subtitles.ro.srt" srclang="ro" label="Romanian" default>
+                </video>
+                </div>
+            </div>
+            </div>
+        </section>
+
+<!-- Grid Section -->
+<div class="container mt-5">
+    <h2 class="mb-4">Ține pasul! Fii informat!</h2>
+  
+    <div class="row g-3">
+      <!-- Card 1 -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="photos/03(3).png" alt="Cum să devii antreprenor" class="card-img-top mx-auto d-block mt-3" style="width: 140px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <a href="https://www.nameform.ro/post/cum-s%C4%83-devii-antreprenor-10-pa%C8%99i-%C8%99i-sfaturi-pentru-succes">
+              <h5 class="card-title">Cum să devii antreprenor: 10 pași și sfaturi pentru succes</h5>
+            </a>
+            <p class="card-text">Ați auzit cu siguranta acest cuvant foarte utilizat, „antreprenor”, lansat din lumea startup-urilor...</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="photos/03.png" alt="Cum să începi o afacere" class="card-img-top mx-auto d-block mt-3" style="width: 140px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <a href="https://startco.ro/blog/cum-sa-incepi-o-afacere-primii-pasi-in-antreprenoriat/">
+              <h5 class="card-title">Cum să începi o afacere: Primii pași în antreprenoriat</h5>
+            </a>
+            <p class="card-text">Te-ai săturat să lucrezi pentru visele altor persoane și te gândești să devii antreprenor? Este timpul să te dedici...</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="photos/03(2).png" alt="Calitati antreprenor de succes" class="card-img-top mx-auto d-block mt-3" style="width: 140px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <a href="https://www.business-education.ro/fara-categorie/10-calitati-ale-unui-antreprenor-de-succes/">
+              <h5 class="card-title">10 calitati ale unui antreprenor de succes</h5>
+            </a>
+            <p class="card-text">Nimeni nu se naste antreprenor. E adevarat, oricine poate invata cum sa isi intemeze si sa conduca propria afacere...</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="photos/02.png" alt="Antreprenoriat in Romania" class="card-img-top mx-auto d-block mt-3" style="width: 140px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <a href="https://ciel.ro/blog/antreprenoriat/antreprenoriat-in-romania-tot-ce-trebuie-sa-stii-ghid-ciel-romania-2/">
+              <h5 class="card-title">Antreprenoriat in Romania – tot ce trebuie sa stii – Ghid CIEL Romania</h5>
+            </a>
+            <p class="card-text">Fara doar si poate, antreprenoriatul in Romania este o afacere riscanta. Insa...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+        <!-- Review Section -->
+        <style>
+            .accent {
+          color: #ff7300;
+        }
+        .review-card {
+          border: 1px solid #e0e0e0;
+          border-radius: 1rem;
+          padding: 1.5rem;
+          background-color: #fff;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          height: 100%;
+        }
+        .review-stars {
+          color: #ff7300;
+        }
+        .delete-btn {
+          background: none;
+          border: none;
+          color: #dc3545;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
+        #showMoreBtn {
+          cursor: pointer;
+          color: #ff7300;
+          text-decoration: underline;
+        }
+        .review-item {
+          margin-bottom: 1.5rem;
+        }
+          </style>
+    
+    <section class="container py-5">
+        <h2 class="text-center mb-5 accent">Ce spun utilizatorii noștri</h2>
+    
+        <div class="row" id="reviewList">
+          <!-- Recenziile vor fi aici -->
+        </div>
+        <div class="text-center">
+          <span id="showMoreBtn" class="d-none">Vezi mai mult</span>
+        </div>
+    
+        <!-- Formular Adăugare Recenzie -->
+        <div class="card p-3 shadow-sm w-75 mx-auto mt-4">
+          <h4 class="accent">Lasă o recenzie</h4>
+          <form id="reviewForm">
+            <div class="mb-2">
+              <label for="name" class="form-label">Nume</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-2">
+              <label for="rating" class="form-label">Evaluare (1-5)</label>
+              <select class="form-select" id="rating" required>
+                <option value="">Selectează</option>
+                <option value="1">★☆☆☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="4">★★★★☆</option>
+                <option value="5">★★★★★</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label for="message" class="form-label">Recenzia ta</label>
+              <textarea class="form-control" id="message" rows="2" required></textarea>
+            </div>
+            <button type="submit" class="btn mt-2" style="background-color: #ff7300; color: white;">Trimite Recenzia</button>
+          </form>
+        </div>
+      </section>
+
+
+    <footer class="footer text-center">
+        <p>&copy; 2025 AntrePro by Ștețco Jassmyna. All rights reserved.</p>
+      </footer>
+
+
+
+    <!-- Bootstrap JS (optional, for certain components) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        //reviewForm
+        const reviewList = document.getElementById('reviewList');
+    const showMoreBtn = document.getElementById('showMoreBtn');
+    let allReviews = [];
+
+    function createReviewElement(name, rating, message) {
+      const stars = '★★★★★☆☆☆☆☆'.slice(5 - rating, 10 - rating);
+      const col = document.createElement('div');
+      col.className = 'col-12 col-sm-6 col-lg-4 review-item';
+      col.innerHTML = `
+        <div class="review-card h-100">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="mb-0">${name}</h5>
+            <div class="review-stars">${stars}</div>
+          </div>
+          <p class="mb-2">${message}</p>
+          <button class="delete-btn" onclick="this.closest('.col-12').remove()">Șterge</button>
+        </div>
+      `;
+      return col;
+    }
+
+    function displayReviews() {
+      reviewList.innerHTML = '';
+      allReviews.forEach((review, index) => {
+        const reviewEl = createReviewElement(review.name, review.rating, review.message);
+        if (index >= 3) reviewEl.classList.add('d-none');
+        reviewList.appendChild(reviewEl);
+      });
+      if (allReviews.length > 3) showMoreBtn.classList.remove('d-none');
+      else showMoreBtn.classList.add('d-none');
+    }
+
+    document.getElementById('reviewForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const rating = document.getElementById('rating').value;
+      const message = document.getElementById('message').value;
+      allReviews.push({ name, rating, message });
+      displayReviews();
+      this.reset();
+    });
+
+    showMoreBtn.addEventListener('click', function () {
+      document.querySelectorAll('.review-item.d-none').forEach(el => el.classList.remove('d-none'));
+      this.classList.add('d-none');
+    });
+
+    // Recenzii implicite
+    allReviews = [
+      { name: "Alice M.", rating: 5, message: "Resursele despre planuri de afaceri de pe site m-au ajutat enorm în pregătirea lansării start-upului meu." },
+      { name: "John D.", rating: 4, message: "Ghidurile pentru obținerea finanțării sunt clare și practice. Le-am folosit pentru a obține un grant important." },
+      { name: "Maria K.", rating: 5, message: "Webinariile despre marketing antreprenorial sunt valoroase și bine structurate. Recomand tuturor celor la început de drum." },
+      { name: "Alex P.", rating: 3, message: "Platforma oferă informații utile, dar mi-ar plăcea mai multe exemple practice în secțiunea de studii de caz." }
+    ];
+    displayReviews();
+    </script>
+</body>
+</html>
